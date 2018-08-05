@@ -114,13 +114,13 @@ section.blocks .box p:first-letter {
     color: black;
 }
 section.blocks .gallery-container div > h2{
-    font-size: 2.8em;
+    font-size: 32px;
     border-bottom: 30px;
 }
 
 section.blocks .gallery-container .box p {
-    font-size: 1.5em;
-    line-height: 1.6em;
+    font-size: 20px;
+    line-height: 32px;
     text-indent: initial;
     color: black;
 }
