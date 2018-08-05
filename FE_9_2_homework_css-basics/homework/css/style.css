@@ -1,0 +1,97 @@
+/* 
+
+write your code here
+
+*/
+#about .box img {
+    border-radius: 50%;
+}
+
+.box.box-bg:hover {
+    background-color: #33B5D9;
+}
+
+.box.box-bg:hover h2 {
+    color: white;
+    font-weight: 900;
+}
+
+.tm-sidebar, .tm-content-box {
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .5);
+}
+
+section {
+    position: relative;
+}
+
+section:before {
+    display: block;
+    content: "";
+    width: 100px;
+    clip-path: polygon(100% 0, 0 0, 0 20%);
+    top: 0;
+    height: 150px;
+    background: #32B5D9;
+}
+
+section#ideas .tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+p:first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+section.heading a:visited {
+    color: silver;
+}
+section.heading a {
+    color: black;
+}
+
+section.heading a:hover {
+    color: #76cdd7;
+    border-bottom: 1px solid #76cdd7;
+}
+section.heading a.text:after {
+    display: block;
+    content: "New";
+    color: red;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-size: 10px;
+}
+section.heading  li{
+    position: relative;
+    width: fit-content;
+}
+section.blocks .box:nth-child(odd){
+    background: #F7F7F7;
+}
+section.blocks .box p:first-letter {
+    color: black;
+}
+
+.tm-main-nav .tm-nav-item:not(:last-child){
+    border-bottom: 2px dotted silver;
+}
+.contact-form input, .contact-form  .submit-btn{
+    color: red;
+}
+.contact-form #contact_email:after {
+    display: block;
+    content: "*";
+    color: red;
+}
+
+.contact-form  .submit-btn:hover{
+    background:#31B0D5;
+    color: white;
+}
