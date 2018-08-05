@@ -1,8 +1,41 @@
-/* 
+@media print {
+    @page {
+        margin-top: 2cm;
+    }
 
-write your code here
+    body {
+        background: white;
+        padding-top: 0;
+    }
+    .pad {
+        padding: 0 0 0 20px;
+    }
+    section:not(:first-of-type), .tm-sidebar, #about {
+        display: none;
+    }
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .pad.flex-item.tm-team-description-container {
+        max-width: none;
+    }
 
-*/
+    .flex-item:last-child {
+        text-align: center;
+    }
+    .tm-content-box .tm-banner {
+        height: 200px;
+        padding: unset;
+    }
+    h2.tm-section-title {
+        color: blue;
+    }
+    .tm-content-box .flex-2-col {
+        display: block;
+    }
+}
+
 #about .box img {
     border-radius: 50%;
 }
@@ -47,7 +80,9 @@ p:first-letter {
     color: #76cdd7;
     font-size: 30px;
 }
-
+p{
+    text-indent: 25px;
+}
 section.heading a:visited {
     color: silver;
 }
@@ -78,6 +113,25 @@ section.blocks .box:nth-child(odd){
 section.blocks .box p:first-letter {
     color: black;
 }
+section.blocks .gallery-container div > h2{
+    font-size: 2.8em;
+    border-bottom: 30px;
+}
+
+section.blocks .gallery-container .box p {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    text-indent: initial;
+    color: black;
+}
+
+section.blocks .gallery-container .box p::first-letter {
+    color: black;
+}
+
+section.blocks .tm-box-bg-title {
+    background-color: white;
+}
 
 .tm-main-nav .tm-nav-item:not(:last-child){
     border-bottom: 2px dotted silver;
@@ -85,13 +139,15 @@ section.blocks .box p:first-letter {
 .contact-form input, .contact-form  .submit-btn{
     color: red;
 }
-.contact-form #contact_email:after {
-    display: block;
+
+.contact-form .mandatory-field::after {
     content: "*";
     color: red;
+    font-weight: bold;
 }
 
 .contact-form  .submit-btn:hover{
     background:#31B0D5;
     color: white;
+    border-color: transparent;
 }
